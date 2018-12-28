@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	{{> head}}
+	<style>
+		.form-control {
+			margin: 10px 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container my-5">
+		{{> header}}
+
+		<div class="row my-3">
+			<div class="col-md-8">
+				<div id="main-wrapper">
+					<h3>{{pageTitle}}</h3><br>
+					<input type="email" class="form-control" placeholder="Email">
+					<input type="text" class="form-control" placeholder="Name">
+					<textarea class="form-control" rows="5" placeholder="Message"></textarea>
+					<button class="btn btn-secondary">Submit</button>
+				</div>
+			</div>
+			{{> sidebar}}
+		</div>
+
+		{{> footer}}	
+	</div>
+</body>
+</html>
